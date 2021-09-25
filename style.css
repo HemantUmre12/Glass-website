@@ -1,0 +1,97 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* Animated Gradient Backgroound */
+main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out 0s infinite alternate both;
+}
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+/* Glass effect to Main(center) section */
+.glass{
+  display: flex;
+  height: 80vh;
+  width: 60%;
+  background: linear-gradient(45deg, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+}
+/* Designing circle and giving them animation */
+#circle{
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.178),rgba(255, 255, 255, 0.048));
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1{
+  width: 100px;
+  height: 100px;
+  animation: circle_movement1 20s linear infinite alternate
+}
+.circle2{
+  width: 200px;
+  height: 200px;
+  animation: circle_movement2 20s linear infinite alternate
+}
+.circle3{
+  width: 300px;
+  height: 300px;
+  animation: circle_movement3 15s linear infinite alternate both;
+}
+.circle4{
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -50px;
+}
+/* Random Values, making them bounce out of the frame */
+@keyframes circle_movement1{
+  0%{
+    transform: translate(-100px,-10px);
+    }
+  50%{
+    transform: translate(900px,900px);
+  }
+  100%{
+    transform: translate(-1000px,-10px);
+  }
+}
+@keyframes circle_movement2{
+  0%{
+    transform: translate(10px,900px);
+    }
+  50%{
+    transform: translate(100px,-200px);
+  }
+  100%{
+    transform: translate(-20px,-900px);
+  }
+}
+@keyframes circle_movement3{
+  0%{
+    transform: translate(1000px,-40px);
+    }
+  50%{
+    transform: translate(900px,-70px);
+  }
+  100%{
+    transform: translate(-1000px,90px);
+  }
+}
