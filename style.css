@@ -14,7 +14,7 @@ main{
   height: 100vh;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB);
   background-size: 400% 400%;
-  animation: change 10s ease-in-out 0s infinite alternate both;
+  animation: change 10s linear 0s infinite alternate both;
 }
 @keyframes change{
   0%{
@@ -43,17 +43,19 @@ main{
 .circle1{
   width: 100px;
   height: 100px;
-  animation: circle_movement1 20s linear infinite alternate
+  animation: circle_movement1 30s linear infinite alternate
+  both;
 }
 .circle2{
   width: 200px;
   height: 200px;
-  animation: circle_movement2 20s linear infinite alternate
+  animation: circle_movement2 40s linear infinite alternate
+  both;
 }
 .circle3{
   width: 300px;
   height: 300px;
-  animation: circle_movement3 15s linear infinite alternate both;
+  animation: circle_movement3 50s linear 5s infinite alternate both;
 }
 .circle4{
   width: 500px;
@@ -64,34 +66,35 @@ main{
 /* Random Values, making them bounce out of the frame */
 @keyframes circle_movement1{
   0%{
-    transform: translate(-100px,-10px);
+    transform: translate(-500px,500px);
     }
   50%{
-    transform: translate(900px,900px);
+    transform: translate(500px,-500px);
   }
   100%{
-    transform: translate(-1000px,-10px);
+    transform: translate(-750px,-100px);
   }
+
 }
 @keyframes circle_movement2{
   0%{
-    transform: translate(10px,900px);
+    transform: translate(-750px,-100px);
     }
   50%{
-    transform: translate(100px,-200px);
+    transform: translate(700px,-700px);
   }
   100%{
-    transform: translate(-20px,-900px);
+    transform: translate(200px,700px);
   }
 }
 @keyframes circle_movement3{
   0%{
-    transform: translate(1000px,-40px);
+    transform: translate(900px,-400px);
     }
   50%{
-    transform: translate(900px,-70px);
+    transform: translate(-900px,70px);
   }
   100%{
-    transform: translate(-1000px,90px);
+    transform: translate(200px,700px);
   }
 }
