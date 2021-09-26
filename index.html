@@ -3,16 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;400&display=swap" rel="stylesheet">
+  <!-- CSS link -->
   <link rel="stylesheet" href="style.css">
   <title>Glass Website</title>
 </head>
 <body>
   <main>
-    <section class="glass"></section>
+    <section class="glass">
+      <div class="left">
+
+        <div class="avatar">
+
+          <img src="./images/avatar.png" alt="">
+          <h3>Hemant Umre</h3>
+          <p>Pro Player</p>
+
+        </div>
+
+        <div class="links">
+
+          <div>
+            <img src="./images/twitch.png" alt="" class="">
+            <p>Streams</p>
+          </div>
+          <div>
+            <img src="./images/steam.png" alt="" class="">
+            <p>Games</p>
+          </div>
+          <div>
+            <img src="./images/upcoming.png" alt="" class="">
+            <p>Upcoming</p>
+          </div>
+          <div>
+            <img src="./images/library.png" alt="" class="">
+            <p>Library</p>
+          </div>
+
+        </div>
+
+        <div class="ad">
+
+          <p>Join Pro for free games</p>
+          <img src="./images/controller.png" alt="">
+
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="status">
+          <h1>Active Games</h1>
+          <input type="text" name="search" id="search" placeholder="Search...">
+        </div>
+        <div class="cards">
+          <div class="game">
+            <div class="image"><img src="./images/assassins.png" alt=""></div>
+            <div class="details">
+              <p>Assassins Creed Valhalla</p>
+              <p>PS5 Version</p>
+              <div id="progress"></div>
+            </div>
+            <p class="percentage">60%</p>
+          </div>  
+          <div class="game">
+            <div class="image"><img src="./images/sackboy.png" alt=""></div>
+            <div class="details">
+              <p>Sackboy Adventures</p>
+              <p>PS5 Version</p>
+              <div id="progress"></div>
+            </div>
+            <p class="percentage">50%</p>
+          </div>  
+          <div class="game">
+            <div class="image"><img src="./images/spiderman.png" alt=""></div> 
+            <div class="details">
+              <p>Spiderman: Home-Coming</p>
+              <p>PS5 Version</p>
+              <div id="progress"></div>
+            </div>
+            <p class="percentage">80%</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <div id="circle" class="circle1"></div>
     <div id="circle" class="circle2"></div>
     <div id="circle" class="circle3"></div>
-    <div id="circle" class="circle4"></div>
+    <!-- <div id="circle" class="circle4"></div> -->
   </main>
   
 </body>
